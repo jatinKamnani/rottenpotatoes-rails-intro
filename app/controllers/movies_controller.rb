@@ -25,7 +25,7 @@ class MoviesController < ApplicationController
     
     
     if !@set_ratings
-      @set_ratings = Hash.new
+      @set_ratings = Hash.new(@all_ratings)
     end
     
   end
